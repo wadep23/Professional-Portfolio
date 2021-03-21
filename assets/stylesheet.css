@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: rgb(255, 255, 255);
+    --background1: #23231b;
+}
+header{
+    display: flex;
+    padding: 20px 35px;
+    margin: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--background1)
+    }
+header h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    text-shadow: 5px 5px 10px rgba(244, 244, 244, 0.5);
+    color: var(--primary);
+    text-decoration: none;
+}
+nav ul li a{
+    justify-content: space-around;
+    flex-direction: row;
+}
