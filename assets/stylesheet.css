@@ -6,24 +6,76 @@
 :root{
     --primary: rgb(255, 255, 255);
     --background1: #23231b;
+    --background2: #d3d3d2;
+    --background3: #8b8a8a;
 }
 header{
     display: flex;
-    padding: 20px 35px;
-    margin: 15px;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--background1)
+    background-color: var(--background1);
+    padding: 15px;
     }
 header h1{
     font-weight: bold;
-    font-size: 30px;
-    margin: 0;
-    text-shadow: 5px 5px 10px rgba(244, 244, 244, 0.5);
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(244, 244, 244, 0.25);
     color: var(--primary);
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    padding: 18px;
 }
 nav ul li a{
-    justify-content: space-around;
-    flex-direction: row;
+    padding: 20px;
+    font-size: 23px;
+}
+.hero{
+    display: flex;
+    background-image: url("./images/hero-banner.png");
+    background-size: cover;
+    background-position: 80%;
+    color: var(--primary);
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+}
+.hero h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+#about{
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background2);
+}
+#about h2{
+    margin: 30px 75px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#about p{
+    margin: 30px 75px;
+
+}
+#work{
+    background-color: var(--background2);
+    height: 400px;
+    display: flex;
+}
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background3);
 }
